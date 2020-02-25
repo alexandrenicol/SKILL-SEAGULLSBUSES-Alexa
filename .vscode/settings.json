@@ -1,0 +1,9 @@
+{
+    "eslint.alwaysShowStatus": true,
+    "eslint.format.enable": true,
+    "eslint.lintTask.enable": true,
+    "eslint.workingDirectories": [{"mode": "auto"}],
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+}
