@@ -1,0 +1,7 @@
+.ask/config
+node_modules
+__MACOSX
+.env
+test_output
+*.log
+*.DS_Store

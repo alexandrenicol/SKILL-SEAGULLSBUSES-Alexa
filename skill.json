@@ -1,0 +1,57 @@
+{
+  "manifest": {
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "BrightonBuses",
+          "sourceDir": "lambda/eu-west-1_BrightonBuses"
+        }
+      }
+    },
+    "manifestVersion": "1.0",
+    "permissions": [],
+    "privacyAndCompliance": {
+      "locales": {
+        "en-GB": {
+          "privacyPolicyUrl": "http://webnicol.fr/privacy.html",
+          "termsOfUseUrl": "http://webnicol.fr/privacy.html"
+        }
+      },
+      "allowsPurchases": false,
+      "usesPersonalInfo": false,
+      "isChildDirected": false,
+      "isExportCompliant": true
+    },
+    "publishingInformation": {
+      "locales": {
+        "en-GB": {
+          "name": "Seagulls Buses",
+          "smallIconUri": "https://s3.amazonaws.com/CAPS-SSE/echo_developer/ccad48560fd148b788c165bef2fdd407/APP_ICON?versionId=mGKagSKBHii0n8ntOuYtS4CkUfHtrzi4&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20200223T073716Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86400&X-Amz-Credential=AKIAJFEYRBGIHK2BBYKA%2F20200223%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=fb8c1db4c51563e853d5474d0a193a433ed0f32e1a8df5c58e3f9952b841fad1",
+          "largeIconUri": "https://s3.amazonaws.com/CAPS-SSE/echo_developer/be83f2dc3bf14868aaa5209ab7a077ec/APP_ICON_LARGE?versionId=KZvMHdnQJaDwHvQeG4hFdYWLPcNP6Avm&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20200223T073716Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86400&X-Amz-Credential=AKIAJFEYRBGIHK2BBYKA%2F20200223%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=5727dc755f059063b696251076a28dd0c44173823d81b4c098ce1c94ce29801a",
+          "summary": "With the Seagulls Buses Alexa skill, you will never miss your bus in Brighton again! Setup your home bus stop and get the live timetable!",
+          "description": "Get the live timetables at more than 1500 bus stops between Brighton and Hove!\n\nSimply enable the skill, select your home bus stop using the Alexa app and ask Alexa for the next buses arriving at your home stop.\n\nJust say \"Alexa, ask Seagulls buses to give me the next buses\" and you will get the next buses arriving at your home stop, ideal for your daily commute!\n\nAt any moment, you can change your home stop by just saying \"Alexa, ask Seagulls buses to change my home stop\", you'll then receive a card in your Alexa app to select your new home stop.\n\nThis skill is not sponsored or endorsed by Brighton & Hove Bus and Coach. \n\nHave fun!\n\nChange log (Feb 2017):\n--- V1.1 ---\n• You can now ask for a specific line at your home stop: i.e. \"Ask seagulls buses for the next 5A\"",
+          "examplePhrases": [
+            "Alexa Ask Seagulls Buses for the next 5A",
+            "Alexa Ask Seagulls Buses to give me the next buses",
+            "Alexa Ask Seagulls Buses to change my home stop"
+          ],
+          "keywords": [
+            "Bus",
+            "Buses",
+            "Brighton",
+            "Hove",
+            "Sussex",
+            "Transport",
+            "Transportation",
+            "Trip",
+            "Coach"
+          ]
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "1. Enable this skill on your account\n2. Open the skill by saying \"Alexa, open Seagulls buses\"\n-. Alexa will send a 'Link account' card on the Alexa app\n3. In the Alexa app, click on the 'Link account' button.\n4. Once on the website, click on a blue marker, and choose your home stop by clicking the button on the popup.\n-. Your account is now set up\n5. Say \"Alexa, ask Seagulls buses for the next buses\" to get the next buses at your home stop\n-. You get a list of the next buses at your home stop\n6. Say \"Alexa, ask Seagulls buses to change my home stop\" if you want to change your home stop.\n-. Alexa is sending a 'Link account' card so the use can select a new home bus stop.\n\nChange log (updated 13 Feb):\n--- V1.1 ---\n• You can now ask for a specific line at your home stop: i.e. \"Ask seagulls buses for the next 5A\"",
+      "category": "PUBLIC_TRANSPORTATION",
+      "distributionCountries": []
+    }
+  }
+}

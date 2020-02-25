@@ -1,0 +1,26 @@
+{
+  "name": "brighton-buses-alexa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "alexa-sdk": "^1.0.6",
+    "ask-sdk": "^2.7.0",
+    "aws-sdk": "^2.7.13",
+    "dotenv": "^8.2.0",
+    "lodash": "^4.17.2",
+    "node-fetch": "^2.6.0",
+    "request": "^2.79.0",
+    "request-promise": "^4.1.1"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.20.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

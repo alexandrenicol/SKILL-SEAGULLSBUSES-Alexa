@@ -1,0 +1,427 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "seagulls buses",
+      "intents": [
+        {
+          "name": "SetHomeStop",
+          "samples": [
+            "set my home stop",
+            "set my bus stop",
+            "set my stop",
+            "set the home stop",
+            "set the home bus stop",
+            "set the bus stop",
+            "change my home stop"
+          ]
+        },
+        {
+          "name": "GetNextBuses",
+          "samples": [
+            "get the next buses",
+            "get the next bus",
+            "tell me the next bus",
+            "tell me the next buses",
+            "give me the next bus",
+            "give me the next buses",
+            "next bus",
+            "next buses"
+          ]
+        },
+        {
+          "name": "GetNextBusLine",
+          "slots": [
+            {
+              "name": "Line",
+              "type": "LINES"
+            }
+          ],
+          "samples": [
+            "when is the next {Line}",
+            "for the next {Line}",
+            "give me the next {Line}",
+            "next {Line}",
+            "tell me the next {Line}"
+          ]
+        },
+        {
+          "name": "AMAZON.HelpIntent"
+        },
+        {
+          "name": "AMAZON.StopIntent"
+        },
+        {
+          "name": "AMAZON.CancelIntent"
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "1"
+              }
+            },
+            {
+              "name": {
+                "value": "12"
+              }
+            },
+            {
+              "name": {
+                "value": "12A"
+              }
+            },
+            {
+              "name": {
+                "value": "12X"
+              }
+            },
+            {
+              "name": {
+                "value": "13X"
+              }
+            },
+            {
+              "name": {
+                "value": "14"
+              }
+            },
+            {
+              "name": {
+                "value": "14A"
+              }
+            },
+            {
+              "name": {
+                "value": "14B"
+              }
+            },
+            {
+              "name": {
+                "value": "14C"
+              }
+            },
+            {
+              "name": {
+                "value": "18"
+              }
+            },
+            {
+              "name": {
+                "value": "1A"
+              }
+            },
+            {
+              "name": {
+                "value": "2"
+              }
+            },
+            {
+              "name": {
+                "value": "21"
+              }
+            },
+            {
+              "name": {
+                "value": "21A"
+              }
+            },
+            {
+              "name": {
+                "value": "21E"
+              }
+            },
+            {
+              "name": {
+                "value": "22"
+              }
+            },
+            {
+              "name": {
+                "value": "22A"
+              }
+            },
+            {
+              "name": {
+                "value": "23"
+              }
+            },
+            {
+              "name": {
+                "value": "24"
+              }
+            },
+            {
+              "name": {
+                "value": "25"
+              }
+            },
+            {
+              "name": {
+                "value": "25X"
+              }
+            },
+            {
+              "name": {
+                "value": "26"
+              }
+            },
+            {
+              "name": {
+                "value": "27"
+              }
+            },
+            {
+              "name": {
+                "value": "27B"
+              }
+            },
+            {
+              "name": {
+                "value": "27C"
+              }
+            },
+            {
+              "name": {
+                "value": "28"
+              }
+            },
+            {
+              "name": {
+                "value": "29"
+              }
+            },
+            {
+              "name": {
+                "value": "29B"
+              }
+            },
+            {
+              "name": {
+                "value": "29X"
+              }
+            },
+            {
+              "name": {
+                "value": "2B"
+              }
+            },
+            {
+              "name": {
+                "value": "46"
+              }
+            },
+            {
+              "name": {
+                "value": "48"
+              }
+            },
+            {
+              "name": {
+                "value": "49"
+              }
+            },
+            {
+              "name": {
+                "value": "494"
+              }
+            },
+            {
+              "name": {
+                "value": "5"
+              }
+            },
+            {
+              "name": {
+                "value": "50"
+              }
+            },
+            {
+              "name": {
+                "value": "50U"
+              }
+            },
+            {
+              "name": {
+                "value": "55"
+              }
+            },
+            {
+              "name": {
+                "value": "59"
+              }
+            },
+            {
+              "name": {
+                "value": "59A"
+              }
+            },
+            {
+              "name": {
+                "value": "5A"
+              }
+            },
+            {
+              "name": {
+                "value": "5B"
+              }
+            },
+            {
+              "name": {
+                "value": "6"
+              }
+            },
+            {
+              "name": {
+                "value": "60"
+              }
+            },
+            {
+              "name": {
+                "value": "7"
+              }
+            },
+            {
+              "name": {
+                "value": "70"
+              }
+            },
+            {
+              "name": {
+                "value": "71"
+              }
+            },
+            {
+              "name": {
+                "value": "72"
+              }
+            },
+            {
+              "name": {
+                "value": "73"
+              }
+            },
+            {
+              "name": {
+                "value": "74"
+              }
+            },
+            {
+              "name": {
+                "value": "75"
+              }
+            },
+            {
+              "name": {
+                "value": "76"
+              }
+            },
+            {
+              "name": {
+                "value": "76A"
+              }
+            },
+            {
+              "name": {
+                "value": "77"
+              }
+            },
+            {
+              "name": {
+                "value": "78"
+              }
+            },
+            {
+              "name": {
+                "value": "79"
+              }
+            },
+            {
+              "name": {
+                "value": "84"
+              }
+            },
+            {
+              "name": {
+                "value": "91"
+              }
+            },
+            {
+              "name": {
+                "value": "92"
+              }
+            },
+            {
+              "name": {
+                "value": "93"
+              }
+            },
+            {
+              "name": {
+                "value": "94"
+              }
+            },
+            {
+              "name": {
+                "value": "94A"
+              }
+            },
+            {
+              "name": {
+                "value": "95"
+              }
+            },
+            {
+              "name": {
+                "value": "95A"
+              }
+            },
+            {
+              "name": {
+                "value": "N1"
+              }
+            },
+            {
+              "name": {
+                "value": "N12"
+              }
+            },
+            {
+              "name": {
+                "value": "N14"
+              }
+            },
+            {
+              "name": {
+                "value": "N22"
+              }
+            },
+            {
+              "name": {
+                "value": "N25"
+              }
+            },
+            {
+              "name": {
+                "value": "N29"
+              }
+            },
+            {
+              "name": {
+                "value": "N5"
+              }
+            },
+            {
+              "name": {
+                "value": "N7"
+              }
+            }
+          ],
+          "name": "LINES"
+        }
+      ]
+    }
+  },
+  "version": "1"
+}
