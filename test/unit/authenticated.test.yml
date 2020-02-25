@@ -1,0 +1,33 @@
+
+# This is the test file for your unit tests, feel free to copy and modify the template test
+# for your voice app as many times as you want. On this same folder you'll also find a testing.json
+# file, it contains global configurations for future test files you might create in the future.
+#
+# Find more info on https://read.bespoken.io/unit-testing/getting-started/
+---
+configuration:
+    description: Authenticated user test suite
+    accessToken: 149000007185
+---
+- test : Launch - authenticated
+- LaunchRequest : 
+    - response.outputSpeech.ssml : <speak>Welcome to the Seagulls Buses skill, you can ask for the next buses at your home stop, or you can set a new home stop, what can I help you with?</speak>    
+    - response.shouldEndSession : false
+---
+- test : Get buses 
+- GetNextBuses : 
+    - response.outputSpeech.ssml : <speak>Your next buses are:*</speak>
+---
+- test : Get specific bus - expected buses
+- "Get Next Bus Line" :
+    - intent: GetNextBusLine
+    - slots: 
+        Line: "27"
+    - response.outputSpeech.ssml : <speak>Your next buses are:*</speak>
+---
+- test : Get specific bus - should not get buses for this user
+- "Get Next Bus Line" :
+    - intent: GetNextBusLine
+    - slots: 
+        Line: "1"
+    - response.outputSpeech.ssml : <speak>There will be no buses leaving from this stop today.</speak>

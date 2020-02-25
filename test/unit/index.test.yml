@@ -1,0 +1,43 @@
+# This is the test file for your unit tests, feel free to copy and modify the template test
+# for your voice app as many times as you want. On this same folder you'll also find a testing.json
+# file, it contains global configurations for future test files you might create in the future.
+#
+# Find more info on https://read.bespoken.io/unit-testing/getting-started/
+---
+configuration:
+  description: Anonymous user test suite
+---
+- test : Launch - not authenticated
+- LaunchRequest : 
+  - response.outputSpeech.ssml : <speak>Welcome to the Seagulls Buses skill, you have not set your home bus stop yet, open the Alexa app and click on, Link account, to choose your home stop.</speak>
+  - response.shouldEndSession: true
+---
+- test : Set Home stop
+- SetHomeStop : 
+  - response.outputSpeech.ssml : <speak>OK, open the Alexa app and click on, Link account, to change your home stop.</speak>
+  - response.shouldEndSession: true
+---
+- test : Get next buses - not auth 
+- GetNextBuses : 
+  - response.outputSpeech.ssml : <speak>Welcome to the Seagulls Buses skill, you have not set your home bus stop yet, open the Alexa app and click on, Link account, to choose your home stop.</speak>
+  - response.shouldEndSession: true
+---
+- test : Get next buses - not auth 
+- GetNextBusLine : 
+  - response.outputSpeech.ssml : <speak>Welcome to the Seagulls Buses skill, you have not set your home bus stop yet, open the Alexa app and click on, Link account, to choose your home stop.</speak>
+  - response.shouldEndSession: true
+---
+- test : Help intent, then stop
+- AMAZON.HelpIntent : 
+  - response.outputSpeech.ssml : <speak>You can ask for the next buses at your home stop, or you can set a new home stop, what can I help you with?</speak>
+  - response.reprompt.outputSpeech.ssml : <speak>What can I help you with?</speak>
+  - response.shouldEndSession: false
+- AMAZON.StopIntent : 
+  - response.outputSpeech.ssml : <speak>Goodbye!</speak>
+  - response.shouldEndSession: true
+--- 
+- test : Help intent, then session ended
+- AMAZON.HelpIntent
+- SessionEndedRequest:
+  - response.outputSpeech: undefined
+

@@ -1,0 +1,4 @@
+{
+    "handler": "lambda/eu-west-1_BrightonBuses/index.js",
+    "locales": "en-GB"
+}
