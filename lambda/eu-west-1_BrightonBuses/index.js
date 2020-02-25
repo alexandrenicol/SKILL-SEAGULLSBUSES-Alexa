@@ -1,4 +1,4 @@
-require('dotenv').config({ path: './.env' });
+require('dotenv').config({ path: './env' });
 
 const Alexa = require('ask-sdk-core');
 const utils = require('./utils');
